@@ -16,3 +16,7 @@ App build with flutter
 - Technologies used
 
 
+
+
+https://user-images.githubusercontent.com/55053346/173708591-cd1f17c2-76cb-4e12-bc5d-079136f89838.mov
+
