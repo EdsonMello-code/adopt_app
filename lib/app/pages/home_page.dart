@@ -9,8 +9,8 @@ import 'theme/colors.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -111,28 +111,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-
-//  Expanded(
-//             child: Padding(
-//               padding: const EdgeInsets.only(top: 24.0),
-//               child: ClipRRect(
-//                 borderRadius: const BorderRadius.only(
-//                   topLeft: Radius.circular(
-//                     37,
-//                   ),
-//                   topRight: Radius.circular(
-//                     37,
-//                   ),
-//                 ),
-//                 child: Container(
-//                   color: const Color(
-//                     0xFFF6F6F6,
-//                   ),
-//                   padding: EdgeInsets.only(
-//                     left: mediaQuery.viewPadding.left + 16,
-//                   ),
-//                 ),
-//               ),
-//             ),
-//           ),

@@ -6,12 +6,13 @@ import '../pages/home_page.dart';
 import 'custom_menu_item_widget.dart';
 
 class CustomDrawerWidget extends StatelessWidget {
-  const CustomDrawerWidget({Key? key}) : super(key: key);
+  const CustomDrawerWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     final viewportPadding = MediaQuery.of(context).viewPadding;
+
     return ClipRect(
       child: Stack(
         children: [
@@ -35,18 +36,18 @@ class CustomDrawerWidget extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 16.0),
+                      const Padding(
+                        padding: EdgeInsets.only(bottom: 16.0),
                         child: Row(
                           children: [
-                            const CircleAvatar(
+                            CircleAvatar(
                               maxRadius: 20.0,
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 16.0),
+                              padding: EdgeInsets.only(left: 16.0),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const [
+                                children: [
                                   Text(
                                     'Kendali Jenner',
                                     style: TextStyle(
@@ -67,10 +68,10 @@ class CustomDrawerWidget extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 16.0),
+                      const Padding(
+                        padding: EdgeInsets.only(bottom: 16.0),
                         child: Column(
-                          children: const [
+                          children: [
                             CustomMenuItemWidget(
                               icon: Icons.pets,
                               label: 'Adoptoin',
@@ -101,8 +102,8 @@ class CustomDrawerWidget extends StatelessWidget {
                       ),
                       Row(
                         children: [
-                          Row(
-                            children: const [
+                          const Row(
+                            children: [
                               Padding(
                                 padding: EdgeInsets.only(right: 16.0),
                                 child: Icon(
@@ -170,8 +171,8 @@ class CustomDrawerWidget extends StatelessWidget {
                           left: 48.0,
                         ),
                         child: ClipRRect(
-                          child: const HomePage(),
                           borderRadius: BorderRadius.circular(16.0),
+                          child: const HomePage(),
                         ),
                       ),
                       Container(

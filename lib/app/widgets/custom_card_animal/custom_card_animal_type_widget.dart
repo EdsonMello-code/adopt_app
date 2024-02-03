@@ -9,11 +9,11 @@ class CustomCardAnimal extends StatelessWidget {
   final Function(String currentLabel)? onTap;
 
   const CustomCardAnimal({
-    Key? key,
+    super.key,
     required this.label,
     required this.icon,
     this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

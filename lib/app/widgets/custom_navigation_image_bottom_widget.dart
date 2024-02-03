@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomNavigationImageBottomWidget extends StatelessWidget {
-  const CustomNavigationImageBottomWidget({Key? key}) : super(key: key);
+  const CustomNavigationImageBottomWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -9,11 +9,11 @@ class CustomTextFieldWidget extends StatelessWidget {
   final Widget? trailing;
 
   const CustomTextFieldWidget({
-    Key? key,
+    super.key,
     required this.hint,
     this.leading,
     this.trailing,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -31,25 +31,25 @@ class CustomTextFieldWidget extends StatelessWidget {
           decoration: InputDecoration(
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(16.0),
-              borderSide: BorderSide(
+              borderSide: const BorderSide(
                 color: CustomColors.transparentColor,
               ),
             ),
             errorBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(16.0),
-              borderSide: BorderSide(
+              borderSide: const BorderSide(
                 color: CustomColors.transparentColor,
               ),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(16.0),
-              borderSide: BorderSide(
+              borderSide: const BorderSide(
                 color: CustomColors.transparentColor,
               ),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(16.0),
-              borderSide: BorderSide(
+              borderSide: const BorderSide(
                 color: CustomColors.transparentColor,
               ),
             ),

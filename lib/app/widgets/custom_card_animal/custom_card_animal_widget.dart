@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../pages/theme/colors.dart';
 
 class CustomCardAnimalWidget extends StatelessWidget {
-  const CustomCardAnimalWidget({Key? key}) : super(key: key);
+  const CustomCardAnimalWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -45,11 +45,11 @@ class CustomCardAnimalWidget extends StatelessWidget {
                       ),
                     ),
                     Align(
+                      alignment: Alignment.topCenter,
                       child: Image.asset(
                         'assets/images/gato.png',
                         scale: 0.90,
                       ),
-                      alignment: Alignment.topCenter,
                     ),
                   ],
                 ),
@@ -75,8 +75,8 @@ class CustomCardAnimalWidget extends StatelessWidget {
                     ),
                     color: CustomColors.customWhiteColor,
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
+                  child: const Padding(
+                    padding: EdgeInsets.symmetric(
                       horizontal: 16.0,
                       vertical: 16.0,
                     ),
@@ -85,7 +85,7 @@ class CustomCardAnimalWidget extends StatelessWidget {
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
+                          children: [
                             Text(
                               'Sola',
                               style: TextStyle(
@@ -101,7 +101,7 @@ class CustomCardAnimalWidget extends StatelessWidget {
                             ),
                           ],
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.only(top: 8.0),
                           child: Text(
                             'Absyssinion cat',
@@ -112,7 +112,7 @@ class CustomCardAnimalWidget extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.only(top: 16.0),
                           child: Text(
                             '1.5 years old',
@@ -123,9 +123,9 @@ class CustomCardAnimalWidget extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(top: 16.0),
+                          padding: EdgeInsets.only(top: 16.0),
                           child: Row(
-                            children: const [
+                            children: [
                               Padding(
                                 padding: EdgeInsets.only(right: 8.0),
                                 child: Icon(

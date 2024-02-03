@@ -7,9 +7,9 @@ class CustomAppBarWidget extends StatelessWidget
   final double toolbarHeight;
 
   const CustomAppBarWidget({
-    Key? key,
+    super.key,
     this.toolbarHeight = 67.0,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

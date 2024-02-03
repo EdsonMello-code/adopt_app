@@ -4,7 +4,7 @@ import '../widgets/custom_navigation_image_bottom_widget.dart';
 import 'theme/colors.dart';
 
 class DetailsPage extends StatelessWidget {
-  const DetailsPage({Key? key}) : super(key: key);
+  const DetailsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -104,22 +104,22 @@ class DetailsPage extends StatelessWidget {
               ),
               Container(
                 color: CustomColors.customWhiteColor,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(
+                child: const Padding(
+                  padding: EdgeInsets.symmetric(
                     horizontal: 32.0,
                     vertical: 32.0,
                   ),
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(bottom: 16.0),
+                        padding: EdgeInsets.only(bottom: 16.0),
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Row(
                               children: [
-                                const Padding(
+                                Padding(
                                   padding: EdgeInsets.only(
                                     bottom: 8.0,
                                     right: 16.0,
@@ -130,7 +130,7 @@ class DetailsPage extends StatelessWidget {
                                 ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: const [
+                                  children: [
                                     Text(
                                       'Abyssinion cat',
                                       style: TextStyle(
@@ -147,7 +147,7 @@ class DetailsPage extends StatelessWidget {
                                 )
                               ],
                             ),
-                            const Text(
+                            Text(
                               'May 25, 2019',
                               style: TextStyle(
                                 color: Color(0xFFC6C6C6),
@@ -156,7 +156,7 @@ class DetailsPage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const Text(
+                      Text(
                         '''Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.''',
                         style: TextStyle(
                           color: Color(

@@ -4,7 +4,7 @@ import 'package:teste_one/app/pages/home_page.dart';
 import 'pages/details_page.dart';
 
 class AppWidget extends StatelessWidget {
-  const AppWidget({Key? key}) : super(key: key);
+  const AppWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

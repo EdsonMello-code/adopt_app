@@ -7,11 +7,11 @@ class CustomMenuItemWidget extends StatelessWidget {
   final String label;
 
   const CustomMenuItemWidget({
-    Key? key,
+    super.key,
     required this.icon,
     required this.label,
     this.isEnabled = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
